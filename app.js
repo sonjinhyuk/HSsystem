@@ -21,6 +21,10 @@ var server = app.listen(port, function(){
  console.log("Express server has started on port " + port)
 });
 
+app.get('/',function(req, res){
+  res.sendFile(__dirname + '/web/index.html');
+});
+
 var db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', function(){
@@ -28,5 +32,5 @@ db.once('open', function(){
     console.log("Connected to mongod server");
 });
 
-mongoose.connect('mongodb://localhost/mongodb_tutorial');
+mongoose.connect('mongodb://localhost/hssystem');
 var Book = require('./models/book');

@@ -358,6 +358,11 @@ hr
 	margin-right: 30px;
 }
 
+#footer-content ul
+{
+	font-size: 13px;
+}
+
 #footer-content #fbox2
 {
 	float: left;

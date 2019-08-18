@@ -91,31 +91,52 @@ body{
 						허용해주는 제도입니다.</p>
 				</div>
 			</div>
-			<div id="sidebar">
-				<h2>공지사항</h2>
-				<ul class="style2">
-					<li class="first"><a href="#">2019 제4차 고교학점제 정책공감콘서트</a></li>
-					<li><a href="#">[카드뉴스] TMI 고교학점제 알려드림</a></li>
-					<li><a href="#">[특별기획] 새로운 교육 패러다임의 전환, 고교학점제</a></li>
-					<li><a href="#">2019 제3차 고교학점제 정책공감콘서트</a></li>
-					<li><a href="#">2018 고교학점제 정책공감콘서트</a></li>
-				</ul>
-			</div>
+			<form method="post" id="authForm" action="https://www.tistory.com/auth/login">
+						<input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage">
+						<fieldset>
+						  <legend class="screen_out">로그인 정보 입력폼</legend>
+						  <div class="box_login">
+							<div class="inp_text">
+							  <label for="loginId" class="screen_out">아이디</label>
+							  <input type="email" id="loginId" name="loginId" placeholder="ID" >
+							</div>
+							<div class="inp_text">
+							  <label for="loginPw" class="screen_out">비밀번호</label>
+							  <input type="password" id="loginPw" name="password" placeholder="Password" >
+							</div>
+						  </div>
+						  <button type="submit" class="btn_login"  disabled>로그인</button>
+						  <div class="login_append">
+							<div class="inp_chk"> <!-- 체크시 checked 추가 -->
+							  <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
+							  <label for="keepLogin" class="lab_g">
+					<span class="img_top ico_check"></span>
+					<span class="txt_lab">로그인 상태 유지</span>
+					  </label>
+							</div>
+							<span class="txt_find">
+							   <a href="/member/find/loginId" class="link_find">아이디</a>
+								/ 
+							   <a href="/member/find/password" class="link_find">비밀번호 찾기</a>
+							 </span>
+						  </div>
+						  
+						</fieldset>
+					  </form>
+			
 		</div>
 	</div>
 	<div id="footer-wrapper">
 		<div id="footer-content">
 			<div id="fbox1">
-				<h2>Aenean facilisis</h2>
-				<ul class="style2">
-					<li class="first"><a href="#">Maecenas luctus lectus at sapien</a></li>
-					<li><a href="#">Donec dictum metus in sapien</a></li>
-					<li><a href="#">Integer gravida nibh quis urna</a></li>
-					<li><a href="#">Etiam posuere augue sit amet nisl</a></li>
-					<li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
-					<li><a href="#">Praesent scelerisque scelerisque erat</a></li>
-				</ul>
-				<p class="button-style"><a href="#">More Details</a></p>
+					<h2>공지사항</h2>
+					<ul class="style2">
+						<li class="first"><a href="#">2019 제4차 고교학점제 정책공감콘서트</a></li>
+						<li><a href="#">[카드뉴스] TMI 고교학점제 알려드림</a></li>
+						<li><a href="#">[특별기획] 새로운 교육 패러다임의 전환, 고교학점제</a></li>
+						<li><a href="#">2019 제3차 고교학점제 정책공감콘서트</a></li>
+						<li><a href="#">2018 고교학점제 정책공감콘서트</a></li>
+					</ul>
 			</div>
 			<div id="fbox2">
 				<h2>Fusce ultrices fringilla </h2>

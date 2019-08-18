@@ -108,7 +108,7 @@ hr
 
 #header-wrapper
 {
-	overflow: hidden;
+	overflow: visible;
 	height: 150px;
 	background: #FFFFFF;
 }
@@ -618,6 +618,8 @@ ul.style3 .first
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
   }
+
+  
   
   /* Links inside the dropdown */
   .dropdown-content a {
@@ -625,6 +627,7 @@ ul.style3 .first
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
+	width: 125px; padding-left: 1px; padding-right: 1px;
   }
   
   /* Change color of dropdown links on hover */

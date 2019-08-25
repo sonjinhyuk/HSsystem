@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log in</title>
+<link rel="shortcut icon" type="image?x-icon" href="http://www.hscredit.kr/static/common/images/www/common/favicon.ico">
+<style>
+
+body {
+   background-color: #FAFDFF;
+}
+
+div {
+   text-align: center;
+   margin-top: 50px;
+}
+
+form {
+   text-align: center;
+}
+
+span {
+   font-size: 0.8em;
+   color: #848484;
+}
+
+.homepage {
+   text-decoration: none; color: white;
+   width: 200px;
+}
+
+.find {
+   font-size: 0.8em;
+   text-decoration: none; color: #848484;
+}
+.user {
+   background-color: #d8d8d8;
+   width: 260px;
+}
+
+#LoginForm {
+   width: 300px;
+    margin: 70px auto;
+    margin-top: 100px;
+    height: 150px;
+}
+
+#LoginForm input {
+   margin-top: 8px;
+   padding: 18px;
+   outline: 0;
+   border: 0;
+}
+
+#button {
+   width: 296px;
+   background-color: #0B2161;
+   color: white;
+   font-size: 1.3em;
+   font-family: fantasy;
+   font-weight: bold;
+   letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+   <div>
+      <a class="homepage" href="http://www.hscredit.kr/common/greeting.do;jsessionid=74A93B8589F450BAC7D81943B5E006AA">
+      <img class="homepage" src="https://k.kakaocdn.net/dn/psvu8/btqxJyDHm96/b2tSKJ2sHhBKXHVLTYlqkK/img.png" alt="고교학점제 지원센터"></a>
+   </div>
+   <form id="LoginForm" method="post" action="#">
+      <input class="user" id="userid" type="text" maxlength="15" placeholder="로그인" /><br>
+      <input class="user" id="userpw" type="password" maxlength="15" placeholder="비밀번호"/><br>
+      <input id="button" type="submit" value="로그인"><br>
+      <input type="checkbox" id="keeplogin" name="keeplogin">
+      <label for="keeplogin"><span>로그인 상태 유지</span></label>
+      <a class="find" href="#">아이디/비밀번호 찾기</a>
+   </form>
+</html>

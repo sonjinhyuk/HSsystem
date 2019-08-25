@@ -15,14 +15,9 @@ var port = process.env.PORT || 8080;
 
 // [CONFIGURE ROUTER]
 var router = require('./routes')(app)
-console.log(router)
 // [RUN SERVER]
 var server = app.listen(port, function(){
  console.log("Express server has started on port " + port)
-});
-
-app.get('/',function(req, res){
-  res.sendFile(__dirname + '/web/index.html');
 });
 
 var db = mongoose.connection;
@@ -31,6 +26,13 @@ db.once('open', function(){
     // CONNECTED TO MONGODB SERVER
     console.log("Connected to mongod server");
 });
+
+app.get('/',function(req, res){
+  res.sendFile(__dirname + '/web/index.html');
+});
+
+
+
 
 mongoose.connect('mongodb://localhost/hssystem');
 var Book = require('./models/book');

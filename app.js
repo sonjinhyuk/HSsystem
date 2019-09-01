@@ -22,6 +22,25 @@ db.once('open', function(){
     console.log("Connected to mongod server");
 });
 
+var mongoClient = require('mongodb').MongoClient;
+function connectDB() {
+  //localhost 로컬 호스트
+  //:27017  몽고디비 포트
+  //local db 생성시 만든 폴더 명
+  var databaseURL = 'mongodb://localhost:27017';
+  mongoClient.connect(databaseURL,
+      function (err, cluster)
+      {
+        //이 구문까지 실행되었다면 ongoDB 에 연결된 것
+        if (err) {
+            console.log('db connect error');
+            return;
+        }
+        console.log('db was connected : ' + databaseURL);
+        database = cluster.db('test');
+      }
+  );
+}
 //db connection end
 app.use(serveStatic(path.join('public', __dirname, 'public')));
 
@@ -45,17 +64,25 @@ app.get('/',function(req, res){
 var port = process.env.PORT || 8080;
 
 // [CONFIGURE ROUTER]
-// var router = express.Router();
-var router = require('./routes')(app)
+// var Book = require('./models/book');
+var User = require('./models/user');
+var login = require('./routes/user')(app, User)
+
+
+
+var errorHandler = expressErrorHandler(
+  { static: { '404': './public/404.html' } }              //404 에러 코드가 발생하면 해당 페이지를 보여주는 예외 미들웨어
+);
+
+
+app.use(expressErrorHandler.httpError(404));
+app.use(expressErrorHandler);
+ 
 
 // [RUN SERVER]
 var server = app.listen(port, function(){
- console.log("Express server has started on port " + port)
-});
+  console.log("Express server has started on port " + port)
+  connectDB();        //DB 연결 , DB 연결 먼저해도 상관 없음
+ });
+// mongoose.connect('mongodb://localhost/hssystem');
 
-
-
-
-
-mongoose.connect('mongodb://localhost/hssystem');
-var Book = require('./models/book');

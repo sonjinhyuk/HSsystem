@@ -58,13 +58,14 @@
 <body>
 	<div>
 		<span class="mypage">마이페이지</span>
-		<span class="welcome">ㅇㅇㅇ님 반갑습니다.</span><!--회원에 따라 이름 바뀌게-->
+		<span class="welcome"><span id = "name">ㅇㅇㅇ</span>님 반갑습니다.</span><!--회원에 따라 이름 바뀌게-->
 	</div>
 	<hr class="line">
 	<table>
 		<tr>
 			<th>이름</th>
 			<td>ㅇㅇㅇ</td><!--회원에 맞게 표시-->
+			<td rowspan="2"><input id="edit" type="button" value="개인정보 수정"><br><!--Sedit.html로 페이지 이동--></td><!--회원에 맞게 표시-->
 		</tr>
 		<tr>
 			<th>아이디</th>
@@ -73,7 +74,7 @@
 		<tr>
 			<th>학교</th>
 			<td>ㅇㅇㅇ</td><!--회원에 맞게 표시-->
+			<td><input id="Withdrawal" type="button" value="회원 탈퇴"></td><!--회원에 맞게 표시-->
 		</tr>
     </table>
-    <input id="edit" type="button" value="개인정보 수정"><br><!--Sedit.html로 페이지 이동-->
-    <input id="Withdrawal" type="button" value="회원 탈퇴">
+    

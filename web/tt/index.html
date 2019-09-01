@@ -26,56 +26,38 @@ body{
 <div id="wrapper">
 	<div id="header-wrapper">
 		<div id="header">
-				<div id="logo">
-						<a href="#"><img src="images/logo_hscredit.png"></a>
-					</div>
+			<div id="logo">
+				<a href="#"><img src="images/logo_hscredit.png"></a>
+			</div>
 			<div id="menu">
 				<div style="text-align: right;">
 					<div class="dropdown">
-							<button class="dropbtn">알림마당</button>
-							<div class="dropdown-content" style="">
-							  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">공지사항</a>
-							  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">자료실</a>
-							  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">고교학점제 소개</a>
-							  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">FAQ</a>
+						<button class="dropbtn">알림마당</button>
+						<div class="dropdown-content" style="">
+							<a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">공지사항</a>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">교사마당</button>
+							<div class="dropdown-content">
+								<a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">담당 학급</a>
+								<a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">담당 과목</a>
 							</div>
-						  </div>
-						  <div class="dropdown">
-								<button class="dropbtn">학생마당</button>
-								<div class="dropdown-content">
-								  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">커뮤니티</a>
-								  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">학사일정</a>
-								</div>
-							  </div>
-
-							  <div class="dropdown">
-									<button class="dropbtn">교사마당</button>
-									<div class="dropdown-content">
-									  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">담당 학급</a>
-									  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">담당 과목</a>
-									  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">수요조사 관리</a>
-									  <a href="#" style="width: 125px; padding-left: 1px; padding-right: 1px;">수강신청 관리</a>
-									</div>
-								  </div>
-
-								  <div class="dropdown">
-										<button class="dropbtn">수요조사&#47;수강신청</button>
-										<div class="dropdown-content">
-										  <a href="#" style="width: 200px; padding-left: 1px; padding-right: 1px;">수요조사</a>
-										  <a href="#" style="width: 200px; padding-left: 1px; padding-right: 1px;">수강신청</a>
-										  <a href="#" style="width: 200px; padding-left: 1px; padding-right: 1px;">과목 안내</a>
-										  <a href="#" style="width: 200px; padding-left: 1px; padding-right: 1px;">진로진학정보</a>
-										</div>
-									  </div>
-									  <div class="dropdown">
-											<button class="dropbtn">마이페이지</button>
-											<div class="dropdown-content">
-											  <a href="#" style="width: 140px; padding-left: 1px; padding-right: 1px;">정보 수정</a>
-											  <a href="#" style="width: 140px; padding-left: 1px; padding-right: 1px;">수요조사 조회</a>
-											  <a href="#" style="width: 140px; padding-left: 1px; padding-right: 1px;">시간표 조회</a>
-											</div>
-										  </div>
-										  </div>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">수요조사&#47;수강신청</button>
+							<div class="dropdown-content">
+								<a href="#" style="width: 200px; padding-left: 1px; padding-right: 1px;">수요조사</a>
+								<a href="#" style="width: 200px; padding-left: 1px; padding-right: 1px;">수강신청</a>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="dropbtn">마이페이지</button>
+							<div class="dropdown-content">
+								<a href="#" style="width: 140px; padding-left: 1px; padding-right: 1px;">정보 수정</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -92,10 +74,10 @@ body{
 				</div>
 			</div>
 			<form method="post" id="authForm" action="https://www.tistory.com/auth/login">
-						<input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage">
-						<fieldset>
-						  <legend class="screen_out">로그인 정보 입력폼</legend>
-						  <div class="box_login">
+				<input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage">
+				<fieldset>
+					<legend class="screen_out">로그인 정보 입력폼</legend>
+						<div class="box_login">
 							<div class="inp_text">
 							  <label for="loginId" class="screen_out">아이디</label>
 							  <input type="email" id="loginId" name="loginId" placeholder="ID" >
@@ -104,39 +86,37 @@ body{
 							  <label for="loginPw" class="screen_out">비밀번호</label>
 							  <input type="password" id="loginPw" name="password" placeholder="Password" >
 							</div>
-						  </div>
-						  <button type="submit" class="btn_login"  disabled>로그인</button>
-						  <div class="login_append">
+						</div>
+						<button type="submit" class="btn_login"  disabled>로그인</button>
+						<div class="login_append">
 							<div class="inp_chk"> <!-- 체크시 checked 추가 -->
-							  <input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
-							  <label for="keepLogin" class="lab_g">
-					<span class="img_top ico_check"></span>
-					<span class="txt_lab">로그인 상태 유지</span>
-					  </label>
+								<input type="checkbox" id="keepLogin" class="inp_radio"  name="keepLogin">
+								<label for="keepLogin" class="lab_g">
+									<span class="img_top ico_check"></span>
+									<span class="txt_lab">로그인 상태 유지</span>
+								</label>
 							</div>
 							<span class="txt_find">
 							   <a href="/member/find/loginId" class="link_find">아이디</a>
-								/ 
+							   /
 							   <a href="/member/find/password" class="link_find">비밀번호 찾기</a>
-							 </span>
-						  </div>
-						  
-						</fieldset>
-					  </form>
-			
+							</span>
+						</div>
+				</fieldset>
+			</form>	
 		</div>
 	</div>
 	<div id="footer-wrapper">
 		<div id="footer-content">
 			<div id="fbox1">
-					<h2>공지사항</h2>
-					<ul class="style2">
-						<li class="first"><a href="#">2019 제4차 고교학점제 정책공감콘서트</a></li>
-						<li><a href="#">[카드뉴스] TMI 고교학점제 알려드림</a></li>
-						<li><a href="#">[특별기획] 새로운 교육 패러다임의 전환, 고교학점제</a></li>
-						<li><a href="#">2019 제3차 고교학점제 정책공감콘서트</a></li>
-						<li><a href="#">2018 고교학점제 정책공감콘서트</a></li>
-					</ul>
+				<h2>공지사항</h2>
+				<ul class="style2">
+					<li class="first"><a href="#">2019 제4차 고교학점제 정책공감콘서트</a></li>
+					<li><a href="#">[카드뉴스] TMI 고교학점제 알려드림</a></li>
+					<li><a href="#">[특별기획] 새로운 교육 패러다임의 전환, 고교학점제</a></li>
+					<li><a href="#">2019 제3차 고교학점제 정책공감콘서트</a></li>
+					<li><a href="#">2018 고교학점제 정책공감콘서트</a></li>
+				</ul>
 			</div>
 			<div id="fbox2">
 				<h2>Fusce ultrices fringilla </h2>

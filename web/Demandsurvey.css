@@ -1,6 +1,6 @@
 
 /*
-Design by TEMPLATED
+Design by 경채은
 http://templated.co
 Released for free under the Creative Commons Attribution License
 */
@@ -9,10 +9,10 @@ body
 {
 	margin: 50px 0px 0px 0px;
 	padding: 0;
-	background: #E6E6E6 url(images/main-bg.jpg) repeat;
+	background: rgb(43, 43, 43) url(images/main-bg.jpg) repeat;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color: #8F8F8F;
+	color: rgb(0, 0, 0);
 }
 
 h1, h2, h3
@@ -89,7 +89,7 @@ hr
 	overflow: hidden;
 	width: 1200px;
 	margin: 0px auto;
-	background: #FFFFFF;
+	background: rgb(255, 255, 255);
 	box-shadow: 0px 0px 20px rgba(0,0,0,.3);
 }
 
@@ -110,7 +110,7 @@ hr
 {
 	overflow: visible;
 	height: 150px;
-	background: #FFFFFF;
+	background: rgb(255, 255, 255);
 }
 
 #header

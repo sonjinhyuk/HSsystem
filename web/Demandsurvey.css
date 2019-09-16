@@ -253,6 +253,14 @@ hr
 	padding: 0px 0px 0px 0px;
 }
 
+#content h1
+{
+	padding: 0px 0px 20px 0px;
+	letter-spacing: -1px;
+	font-size: 30px;
+	color: #222222;
+}
+
 #content h2
 {
 	padding: 0px 0px 20px 0px;

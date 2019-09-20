@@ -1,17 +1,18 @@
-/*
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-*/
 
 body
 {
-	margin: 50px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 0;
-	background: #E6E6E6 url(images/main-bg.jpg) repeat;
+	background: #E6E6E6 url(images/main-bg.jpg);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #8F8F8F;
+}
+
+#chanyeol
+{
+	font-size: 17px;
+	color: #f1f1f1;
 }
 
 h1, h2, h3
@@ -310,15 +311,14 @@ hr
 
 #footer p
 {
-	text-shadow: 1px 1px 0px #FFFFFF;
 	text-align: center;
 	font-size: 12px;
-	color: #4D565E;
+	color: #ffffff;
 }
 
 #footer a
 {
-	color: rgb(79, 88, 95);
+	color: #ffffff;
 }
 
 /* Three Column Footer Content */

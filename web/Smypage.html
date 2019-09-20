@@ -6,11 +6,19 @@
 	<style>
 		.grade {
 			cursor: pointer;
+			margin-left: 5px;
+			color: white;
+			background-color: #0B2161;
+			outline: none;
+			border: none;
+			font-weight: bold;
+			padding: 5px;
 		}
+		
 		#mypage {
 			text-align: center;
 			margin-top: 80px;
-			margin-right: 840px;
+			margin-right: 840px;                                            
 		}
 
 		#topbar {
@@ -31,10 +39,22 @@
 		}
 
 		#result {
-			text-align: center;
-			margin-top: 50px;
-			margin-left: 900px;
-			font-weight: lighter;
+			font-weight: bold;
+			margin-right: 40px;
+		}
+
+		#choose {
+			margin-left: 780px;
+			margin-top: 30px;
+			font-weight: bold;
+		}
+
+		#choose1 {
+			margin-right: 5px;
+		}
+
+		#choose2 {
+			color: #016EA8
 		}
 	</style>
 </head>
@@ -44,9 +64,16 @@
 		<div style="float:left; color:white; margin-left:30px; margin-top:11px; font-weight:bold;"><span id="name">ㅇㅇㅇ</span>님 반갑습니다.</div>
 		<input type="button" id="edit" value="정보수정" onclick="location.href='#'">
 	</div>
+	<div style="text-align:center;">
+		<div style="margin-top:80px; margin-right: 720px;">
+			<span id="result">수요조사 결과</span>
+			<input type="button" class="grade" value="2학년" onclick="location.href='#'">
+			<input type="button" class="grade" value="3학년" onclick="location.href='#'">
+		</div>
 	<div>
-	<div id="result" style="float:left;">수요조사 결과</div>
-	<input type="button" class="grade" value="2학년" onclick="location.href='#'"> 
+	<div id="choose">
+		<span id="choose1">일반선택과목</span>
+		<span id="choose2">진로선택과목</span>
 	</div>
 </body>
 </html>

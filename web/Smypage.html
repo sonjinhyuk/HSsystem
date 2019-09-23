@@ -9,14 +9,21 @@
 			background-color: #f2f2f2;
 			border: #505050;
 		}
-
 		caption {
 			font-weight: bold;
 			font-size: 1.3em;
+			margin-bottom: 10px;
+		}
+		th {
+			padding: 10px;
+			width: 130px;
 		}
 
-		th {
-			padding: 7px;
+		hr {
+			margin-top: 150px;
+			width: 1000px;
+			background-color: #0B2161;
+			height: 3px;
 		}
 
 		.grade {
@@ -33,16 +40,30 @@
 		.subject {
 			text-align: left;
 		}
-		
+
+		.SubjectTable {
+			width: 400px;
+		}
+
+		.TimeSchedule {
+			margin-top: 70px;
+		}
+
+		.th1 {
+			width: 20px;
+		}
+
 		#mypage {
 			text-align: center;
 			margin-top: 80px;
 			margin-right: 840px;                                            
 		}
+
 		#topbar {
 			margin: 0 auto;
 			margin-top: 20px;
 		}
+
 		#edit {
 			cursor: pointer;
 			float: right;
@@ -54,13 +75,16 @@
 			font-weight: bold;
 			font-size: 1.2em;
 		}
+
 		#result {
 			font-weight: bold;
 			margin-right: 40px;
 		}
+
 		#choose {
 			margin-left: 780px;
-			margin-top: 30px;
+			margin-top: 40px;
+			margin-bottom: 30px;
 			font-weight: bold;
 		}
 
@@ -87,52 +111,60 @@
 		</div>
 	<div>
 	<div id="choose">
+		<span style="font-weight:bold; font-size:1.2em;">*</span>
 		<span id="choose1">일반선택과목</span>
 		<span id="choose2">진로선택과목</span>
 	</div>
-	<table class="SubjectTable" border="2">
+	<div>
+	<div>
+	<table class="SubjectTable">
 		<caption>2학년 1학기</caption>
 		<tr>
-			<th>국어</th>
+			<th class="th1">국어</th>
 			<th class="subject" id="1Korean">(예시) 언어와 매체</th>
 		</tr>
 		<tr>
-			<th>수학</th>
+			<th class="th1">수학</th>
 			<th class="subject" id="1Math">(예시) 미적분</th>
 		</tr>
 		<tr>
-			<th>영어</th>
+			<th class="th1">영어</th>
 			<th class="subject" id="1English">(예시) 영어2</th>
 		</tr>
 		<tr>
-			<th>탐구</th>
+			<th class="th1">탐구</th>
 			<th class="subject"><span id="1Others-1">(예시) 물리1</span>,<span id="1Others-2">지구과학1</span></th>
 		</tr>
 	</table>
-	<table class="SubjectTable" border="2">
+	</div>
+	<div> 
+	<table class="SubjectTable">
 		<caption>2학년 2학기</caption>
 		<tr>
-			<th>국어</th>
+			<th class="th1">국어</th>
 			<th class="subject" id="2Korean">(예시) 화법과 작문</th>
 		</tr>
 		<tr>
-			<th>수학</th>
+			<th class="th1">수학</th>
 			<th class="subject" id="2Math">(예시) 확률과 통계</th>
 		</tr>
 		<tr>
-			<th>영어</th>
+			<th class="th1">영어</th>
 			<th class="subject" id="2English">(예시) 영어권 문화 탐구</th>
 		</tr>
 		<tr>
-			<th>탐구</th>
+			<th class="th1">탐구</th>
 			<th class="subject"><span id="2Others-1">(예시) 화학1</span>,<span id="2Others-2">생명과학1</span></th>
 		</tr>
 	</table>
-	<table class="TimeSchedule" border="2">
+	</div>
+	</div>
+	<hr class="line">
+	<table class="TimeSchedule">
 		<caption><span id="username">ㅇㅇㅇ</span>님의 시간표</caption>
 		<thead>
 			<tr>
-				<th> </th>
+				<th class="th1"> </th>
 				<th>월</th>
 				<th>화</th>
 				<th>수</th>
@@ -142,7 +174,7 @@
 		</thead>
 		<tbody> <!--각 시간별로 id를 설정해야 서버에서 불러올 수 있을 것 같은데 어떻게 설정해야 하는지 모르겠어요-->
 			<tr>
-				<th>1</th>
+				<th class="th1">1</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
 				<th>사회</th>
@@ -150,7 +182,7 @@
 				<th>영어</th>
 			</tr>
 			<tr>
-				<th>2</th>
+				<th class="th1">2</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
 				<th>사회</th>
@@ -158,7 +190,7 @@
 				<th>영어</th>
 			</tr>
 			<tr>
-				<th>3</th>
+				<th class="th1">3</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
 				<th>사회</th>
@@ -166,7 +198,7 @@
 				<th>영어</th>
 			</tr>
 			<tr>
-				<th>4</th>
+				<th class="th1">4</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
 				<th>사회</th>
@@ -174,7 +206,7 @@
 				<th>영어</th>
 			</tr>
 			<tr>
-				<th>5</th>
+				<th class="th1">5</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
 				<th>사회</th>
@@ -182,7 +214,7 @@
 				<th>영어</th>
 			</tr>
 			<tr>
-				<th>6</th>
+				<th class="th1">6</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
 				<th>사회</th>
@@ -190,7 +222,7 @@
 				<th>영어</th>
 			</tr>
 			<tr>
-				<th>7</th>
+				<th class="th1">7</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
 				<th>사회</th>
@@ -203,12 +235,12 @@
 				<th colspan="6">방과후 수업</th>
 			</tr>
 			<tr>
-				<th> </th>
-				<th>방과후과목 1</th> <!--기재된 과목들은 전부 예시-->
-				<th>방과후과목 2</th>
-				<th>방과후과목 3</th>
-				<th>방과후과목 4</th>
-				<th>방과후과목 5</th>
+				<th class="th1"> </th>
+				<th>방과후 1</th> <!--기재된 과목들은 전부 예시-->
+				<th>방과후 2</th>
+				<th>방과후 3</th>
+				<th>방과후 4</th>
+				<th>방과후 5</th>
 			</tr>
 		</tfoot>
 	</table>

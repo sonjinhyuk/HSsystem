@@ -9,7 +9,7 @@ body
 {
 	margin: 50px 0px 0px 0px;
 	padding: 0;
-	background: #E6E6E6 url(images/main-bg.jpg) repeat;
+	background: #E6E6E6 url(tt/images/6828.jpg) repeat;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #8F8F8F;
@@ -87,7 +87,7 @@ hr
 #wrapper
 {
 	overflow: hidden;
-	width: 1200px;
+	width: 350px;
 	margin: 0px auto;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 20px rgba(0,0,0,.3);
@@ -129,6 +129,7 @@ hr
 	width: 350px;
 	height: 40px;
 	padding-top: 50px;
+	padding-right: 10px;
 	background: #ffffff;
 	text-align: center;
 }
@@ -858,15 +859,30 @@ ul.style3 .first
 	margin-left: 95px;
 	margin-right: 15px;
  }
- table, th, td, tr{
-	 font-size: 20px;
+
+ table, td, tr{
+	 font-size: 30px;
 	 border: 2px solid black;
 	 text-align: center;
-	 width: 1100px;
-	 height: 100px;
+	 width: 250px;
+	 height: 80px;
 	 margin-left: 45px;
 	 margin-bottom: 50px;
-	 
+	 background-color: rgb(255, 255, 255);
+	 color: rgb(132, 180, 207);
+ }
+
+
+ th{
+	font-size: 35px;
+	border: 4px solid rgb(99, 121, 218);
+	text-align: center;
+	width: 300px;
+	height: 100px;
+	margin-left: 45px;
+	margin-bottom: 50px;
+	color: rgb(0, 68, 255);
+	
  }
 
 .button{
@@ -880,6 +896,7 @@ ul.style3 .first
 	 text-align: center;
 	 color: rgb(175, 140, 140);
  }
+ /**/
 
  
 

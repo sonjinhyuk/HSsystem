@@ -7,12 +7,22 @@
     <meta charset="utf-8">
     <title>HTML</title>
     <style>
-      table {
-        width: 90%;
-      }
       table, th, td {
         border: 1px solid #bcbcbc;
       }
+      table {
+        width: 90%;
+        height: 100px;
+      }
+      
+      th {
+        width: 200px;
+      }
+
+      td {
+        width: 200px;
+      }
+
       table{
       height: 100px;
       margin: auto;
@@ -25,6 +35,18 @@
       #cell 
       {
         display: table-cell; vertical-align: middle; 
+      }
+
+      button: 1; {
+        position: fixed;
+        right: 100px;
+        top: 300px;
+      }
+
+      button: 2; {
+        position: fixed;
+        right: 100px;
+        top: 600px;
       }
     </style>
   </head>
@@ -41,16 +63,23 @@
       <div id="content">
         <h1><strong>2020학년도 대전전민고등학교 고교학점제 수요조사</strong></h1>
       </div>
-      <br><br><br><br><br><br>
+      <br><br><br><br><br>
+      <div id="wrapper">
+        <div id="cell">
+          <div id="request" class="fixed">
+            <button type="button1" onclick="alert(완료되었습니다)">끝내기</button>
+          </div>
+        </div>
+      </div>
+      <br>
       <table>
-        <caption></caption>
         <thead>
           <tr>
-            <th></th>
+            <th>1학년</th>
             <th>교과 영역</th>
             <th>과목</th>
-            <th>1학기</th>
-            <th>2학기</th>
+            <th colspan="2">1학기</th>
+            <th colspan="2">2학기</th>
           </tr>
         </thead>
         <tbody>
@@ -59,80 +88,96 @@
             <td rowspan="4">기초</td>
             <td>국어</td>
             <td>4</td>
+            <td><input type="checkbox" name="국어" value="1학기"></td>
             <td>4</td>
+            <td><input type="checkbox" name="국어" value="2학기"></td>
           </tr>
           <tr>
             <th>수학</th>
             <td>4</td>
+            <td><input type="checkbox" name="수학" value="1학기"></td>
             <td>4</td>
+            <td><input type="checkbox" name="수학" value="2학기"></td>
           </tr>
           <tr>
             <th>영어</th>
             <td>4</td>
+            <td><input type="checkbox" name="영어" value="1학기"></td>
             <td>4</td>
+            <td><input type="checkbox" name="영어" value="2학기"></td>
           </tr>
           <tr>
             <th>한국사</th>
             <td>3</td>
+            <td><input type="checkbox" name="한국사" value="1학기"></td>
             <td>3</td>
+            <td><input type="checkbox" name="한국사" value="2학기"></td>
           </tr>
           <tr>
             <th rowspan="2">예술</th>
             <td>음악</td>
             <td>2</td>
+            <td><input type="checkbox" name="음악" value="1학기"></td>
             <td>2</td>
+            <td><input type="checkbox" name="음악" value="2학기"></td>
           </tr>
           <tr>
             <th>미술</th>
             <td>2</td>
+            <td><input type="checkbox" name="미술" value="1학기"></td>
             <td>2</td>
+            <td><input type="checkbox" name="미술" value="2학기"></td>
           </tr>
           <tr>
             <th rowspan="3">탐구</th>
             <td>통합사회</td>
             <td>3</td>
+            <td><input type="checkbox" name="통합사회" value="1학기"></td>
             <td>3</td>
+            <td><input type="checkbox" name="통합사회" value="2학기"></td>
           </tr>
           <tr>
             <th>통합과학</th>
             <td>3</td>
+            <td><input type="checkbox" name="통합과학" value="1학기"></td>
             <td>3</td>
+            <td><input type="checkbox" name="통합과학" value="2학기"></td>
           </tr>
           <tr>
             <th>과학탐구실험</th>
             <td>1</td>
+            <td><input type="checkbox" name="과학탐구실험" value="1학기"></td>
             <td>1</td>
+            <td><input type="checkbox" name="과학탐구실험" value="2학기"></td>
           </tr>
           <tr>
             <th>체육</th>
             <td>체육</td>
             <td>2</td>
+            <td><input type="checkbox" name="체육" value="1학기"></td>
             <td>2</td>
+            <td><input type="checkbox" name="체육" value="2학기"></td>
           </tr>
           <tr>
             <th>생활</th>
             <td>기술가정/정보</td>
             <td>3</td>
+            <td><input type="checkbox" name="기술가정/정보" value="1학기"></td>
             <td>3</td>
+            <td><input type="checkbox" name="기술가정/정보" value="2학기"></td>
           </tr>
         </tbody>
         <tfoot>
         </tfoot>
       </table style="">
+      <br>
       <div id="wrapper">
         <div id="cell">
-          <div id="request">
-            <button type="button" onclick="alert(완료되었습니다)">2학년으로</button>
+          <div id="request" class="fixed">
+            <button type="button2" onclick="alert(완료되었습니다)">2학년으로</button>
           </div>
         </div>
       </div>
-      <div id="wrapper">
-          <div id="cell">
-            <div id="request">
-              <button type="button" onclick="alert(완료되었습니다)">끝내기</button>
-            </div>
-          </div>
-        </div>
     </div>
   </body>
 </html>

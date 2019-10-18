@@ -36,12 +36,6 @@
       {
         display: table-cell; vertical-align: middle; 
       }
-
-      button.relative {
-        position: relative;
-        left: 400px;
-        top: 0px;
-      }
     </style>
   </head>
   <body> 
@@ -58,17 +52,13 @@
         <h1><strong>2020학년도 대전전민고등학교 고교학점제 수요조사</strong></h1>
       </div>
       <br><br><br><br><br>
-      <div id="wrapper">
-        <div id="cell">
-          <div id="request" class="fixed">
-            <button type="button1" onclick="alert(완료되었습니다)">끝내기</button>
-          </div>
-        </div>
+      <div id="request">
+          <input type="button" class="button" value="끝내기" />
       </div>
       <br>
       <table>
         <thead>
-          <tr>
+          <tr>  
             <th>2학년</th>
             <th>교과 영역</th>
             <th>과목</th>
@@ -217,17 +207,28 @@
             <td>5</td>
             <td><input type="checkbox" name="지구과학 I" value="2학기"></td>
           </tr>
+          <tr>
+            <th rowspan="2">생활</th>
+            <td>중국어 I</td> <!--일본어, 중국어 중 택1. 1년 연속-->
+            <td>3</td>
+            <td><input type="checkbox" name="중국어 I" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="중국어 I" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>일본어 I</td> <!--일본어, 중국어 중 택1. 1년 연속-->
+            <td>3</td>
+            <td><input type="checkbox" name="일본어 I" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="일본어 I" value="2학기"></td>
+          </tr>
         </tbody>
         <tfoot>
         </tfoot>
       </table style="">
       <br>
-      <div id="wrapper">
-        <div id="cell">
-          <div id="request" class="fixed">
-            <button type="button2" onclick="alert(완료되었습니다)">2학년으로</button>
-          </div>
-        </div>
+      <div id="request">
+          <input type="button" class="button" value="2학년으로">
       </div>
     </div>
   </body>

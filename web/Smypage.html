@@ -2,28 +2,40 @@
 <html>
 <head>
 	<title>학생 마이페이지</title>
-	<link rel="shortcut icon" type="image?x-icon" href="http://www.hscredit.kr/static/common/images/www/common/favicon.ico">
+	<link rel="shortcut icon" type="image?x-icon" href="http://www.hscredit.kr/static/common/images/portal/comm/favicon.ico">
 	<style>
 		table {
 			margin: auto;
-			background-color: #f2f2f2;
-			border: #505050;
-		}
-		caption {
-			font-weight: bold;
-			font-size: 1.3em;
-			margin-bottom: 10px;
-		}
-		th {
-			padding: 10px;
-			width: 130px;
+			background-color: #FEF2C9;
+			border-collapse: collapse;
 		}
 
+		caption {
+			font-weight: bold;
+			font-size: 1.5em;
+			margin-bottom: 10px;
+		}
+
+		th {
+			padding: 15px;
+			width: 130px;
+			border: 1px solid #444444;
+			font-size: 1.1em;
+			font-weight: normal;
+		}
+		
 		hr {
 			margin-top: 150px;
 			width: 1000px;
 			background-color: #0B2161;
 			height: 3px;
+		}
+
+		.homepage {
+			width: 180px;
+			text-align: center;
+			margin-top: 80px;
+			margin-right: 840px;
 		}
 
 		.grade {
@@ -47,15 +59,16 @@
 
 		.TimeSchedule {
 			margin-top: 70px;
+			margin-bottom: 300px;
 		}
 
 		.th1 {
 			width: 20px;
+			font-weight: bolder;
 		}
 
 		#mypage {
 			text-align: center;
-			margin-top: 80px;
 			margin-right: 840px;                                            
 		}
 
@@ -98,6 +111,10 @@
 	</style>
 </head>
 <body>
+	<div>
+		<a class="homepage" href="http://www.hscredit.kr/common/greeting.do;jsessionid=74A93B8589F450BAC7D81943B5E006AA">
+		<img class="homepage" src="http://www.hscredit.kr/static/common/images/www/common/logo.png" alt="고교학점제지원센터"></a>
+	</div>
 	<h1 id="mypage">마이페이지</h1>
 	<div id="topbar"style="width:1000px; height:45px; border:1px solid #0B2161; background-color:#0B2161;">
 		<div style="float:left; color:white; margin-left:30px; margin-top:11px; font-weight:bold;"><span id="name">ㅇㅇㅇ</span>님 반갑습니다.</div>
@@ -116,7 +133,7 @@
 		<span id="choose2">진로선택과목</span>
 	</div>
 	<div>
-	<div>
+	<div style=" display:inline-block;">
 	<table class="SubjectTable">
 		<caption>2학년 1학기</caption>
 		<tr>
@@ -137,7 +154,7 @@
 		</tr>
 	</table>
 	</div>
-	<div> 
+	<div style="display:inline-block; margin-left:10px;"> 
 	<table class="SubjectTable">
 		<caption>2학년 2학기</caption>
 		<tr>
@@ -159,17 +176,17 @@
 	</table>
 	</div>
 	</div>
-	<hr class="line">
+	<hr>
 	<table class="TimeSchedule">
 		<caption><span id="username">ㅇㅇㅇ</span>님의 시간표</caption>
 		<thead>
 			<tr>
 				<th class="th1"> </th>
-				<th>월</th>
-				<th>화</th>
-				<th>수</th>
-				<th>목</th>
-				<th>금</th>
+				<th style="font-weight:bold;">월</th>
+				<th style="font-weight:bold;">화</th>
+				<th style="font-weight:bold;">수</th>
+				<th style="font-weight:bold;">목</th>
+				<th style="font-weight:bold;">금</th>
 			</tr>
 		</thead>
 		<tbody> <!--각 시간별로 id를 설정해야 서버에서 불러올 수 있을 것 같은데 어떻게 설정해야 하는지 모르겠어요-->
@@ -232,10 +249,18 @@
 		</tbody>
 		<tfoot>
 			<tr>
-				<th colspan="6">방과후 수업</th>
+				<th colspan="6" style="font-weight:bold;">방과후 수업</th>
 			</tr>
 			<tr>
-				<th class="th1"> </th>
+				<th class="th1">8</th>
+				<th>방과후 1</th> <!--기재된 과목들은 전부 예시-->
+				<th>방과후 2</th>
+				<th>방과후 3</th>
+				<th>방과후 4</th>
+				<th>방과후 5</th>
+			</tr>
+			<tr>
+				<th class="th1">9</th>
 				<th>방과후 1</th> <!--기재된 과목들은 전부 예시-->
 				<th>방과후 2</th>
 				<th>방과후 3</th>

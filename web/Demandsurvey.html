@@ -37,16 +37,10 @@
         display: table-cell; vertical-align: middle; 
       }
 
-      button: 1; {
-        position: fixed;
-        right: 100px;
-        top: 300px;
-      }
-
-      button: 2; {
-        position: fixed;
-        right: 100px;
-        top: 600px;
+      button.relative {
+        position: relative;
+        left: 400px;
+        top: 0px;
       }
     </style>
   </head>
@@ -75,7 +69,7 @@
       <table>
         <thead>
           <tr>
-            <th>1학년</th>
+            <th>2학년</th>
             <th>교과 영역</th>
             <th>과목</th>
             <th colspan="2">1학기</th>
@@ -85,50 +79,81 @@
         <tbody>
           <tr>
             <th rowspan="11">필수</th>
-            <td rowspan="4">기초</td>
-            <td>국어</td>
-            <td>4</td>
-            <td><input type="checkbox" name="국어" value="1학기"></td>
-            <td>4</td>
-            <td><input type="checkbox" name="국어" value="2학기"></td>
-          </tr>
-          <tr>
-            <th>수학</th>
-            <td>4</td>
-            <td><input type="checkbox" name="수학" value="1학기"></td>
-            <td>4</td>
-            <td><input type="checkbox" name="수학" value="2학기"></td>
-          </tr>
-          <tr>
-            <th>영어</th>
-            <td>4</td>
-            <td><input type="checkbox" name="영어" value="1학기"></td>
-            <td>4</td>
-            <td><input type="checkbox" name="영어" value="2학기"></td>
-          </tr>
-          <tr>
-            <th>한국사</th>
+            <td rowspan="8">기초</td>
+            <td>문학</td>
             <td>3</td>
-            <td><input type="checkbox" name="한국사" value="1학기"></td>
+            <td><input type="checkbox" name="문학" value="1학기"></td>
             <td>3</td>
-            <td><input type="checkbox" name="한국사" value="2학기"></td>
+            <td><input type="checkbox" name="문학" value="2학기"></td>
+          </tr>
+          <tr>
+            <th>언어와 매체</th>
+            <td>3</td>
+            <td><input type="checkbox" name="언어와 매체" value="1학기"></td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <th>독서</th>
+            <td colspan="2"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="독서" value="2학기"></td>
+          </tr>
+          <tr>
+            <th>수학 I</th>
+            <td>4</td>
+            <td><input type="checkbox" name="수학 I" value="1학기"></td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <th>수학 II</th>
+            <td colspan="2"></td>
+            <td>4</td>
+            <td><input type="checkbox" name="수학 II" value="2학기"></td>
+          </tr>
+          <tr>
+            <th>확률과 통계</th>
+            <td>2</td>
+            <td><input type="checkbox" name="확률과 통계" value="1학기"></td>
+            <td>2</td>
+            <td><input type="checkbox" name="확률과 통계" value="2학기"></td>
+          </tr>
+          <tr>
+            <th>영어 I</th>
+            <td>4</td>
+            <td><input type="checkbox" name="영어 I" value="1학기"></td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <th>영어 II</th>
+            <td colspan="2"></td>
+            <td>4</td>
+            <td><input type="checkbox" name="영어 II" value="2학기"></td>
+          </tr>
+          <tr>
+            <th>체육</th>
+            <td>체육</td>
+            <td>1</td>
+            <td><input type="checkbox" name="체육" value="1학기"></td>
+            <td>1</td>
+            <td><input type="checkbox" name="체육" value="2학기"></td>
           </tr>
           <tr>
             <th rowspan="2">예술</th>
             <td>음악</td>
-            <td>2</td>
+            <td>1</td>
             <td><input type="checkbox" name="음악" value="1학기"></td>
-            <td>2</td>
+            <td>(1)</td>
             <td><input type="checkbox" name="음악" value="2학기"></td>
           </tr>
           <tr>
             <th>미술</th>
-            <td>2</td>
+            <td>(1)</td>
             <td><input type="checkbox" name="미술" value="1학기"></td>
-            <td>2</td>
+            <td>1</td>
             <td><input type="checkbox" name="미술" value="2학기"></td>
           </tr>
           <tr>
+            <th rowspan="11">선택</th>
             <th rowspan="3">탐구</th>
             <td>통합사회</td>
             <td>3</td>

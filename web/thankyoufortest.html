@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>고교학점제 수요조사</title>
+    <meta charset="UTF-8">
+    <link href="Demandsurvey.css" rel="stylesheet" type="text/css" media="all" />
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <style>
+      table, th, td {
+        border: 1px solid #bcbcbc;
+      }
+      table {
+        width: 90%;
+        height: 100px;
+      }
+      
+      th {
+        width: 200px;
+      }
+
+      td {
+        width: 200px;
+      }
+
+      table{
+      height: 100px;
+      margin: auto;
+      text-align: center;
+      }
+      #wrapper 
+      { 
+        display: table;
+      }
+      #cell 
+      {
+        display: table-cell; vertical-align: middle; 
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="wrapper">
+      <div id="header-wrapper">
+        <div id="header">
+          <div id="logo">
+            <a href="#"><img src="C:\Users\freshman02\.vscode\test2\gg\images/logo_hscredit.png"></a>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div id="content">
+        <h1><strong>2020학년도 대전전민고등학교 고교학점제 수요조사</strong></h1>
+      </div>
+      <br><br><br><br><br>
+      <table>
+        <thead>
+          <tr>  
+            <th>3학년</th>
+            <th>교과 영역</th>
+            <th>과목</th>
+            <th colspan="2">1학기</th>
+            <th colspan="2">2학기</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="3">필수</th>
+            <td>기초</td>
+            <td>화법과 작문</td> <!--필수과목(무조건 체크)-->
+            <td>4</td>
+            <td><input type="checkbox" name="문학" value="1학기" checked="checked"></td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td>체육</td>
+            <th>운동과 건강</th> <!--필수과목(무조건 체크)-->
+            <td>2</td>
+            <td><input type="checkbox" name="언어와 매체" value="1학기" checked="checked"></td>
+            <td>2</td>
+            <td><input type="checkbox" name="언어와 매체" value="1학기" checked="checked"></td>
+          </tr>
+          <tr>
+            <td>생활</td>
+            <th>한문 I</th> <!--필수과목(무조건 체크)-->
+            <td>2</td>
+            <td><input type="checkbox" name="독서" value="2학기" checked="checked"></td>
+            <td>1</td>
+            <td><input type="checkbox" name="독서" value="2학기" checked="checked"></td>
+          </tr>
+          <tr>
+            <th rowspan="40">선택</th>
+            <th rowspan="8">탐구<br>(택2)</th>
+            <td>세계지리</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="세계지리" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="세계지리" value="2학기"></td>
+          </tr>
+          <tr>
+            <th>세계사</th> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="세계사" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="세계사" value="2학기"></td>
+          </tr>
+          <tr>
+            <th>사회/문화</th> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="사회/문화" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="사회/문화" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>생활과 윤리</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="생활과 윤리" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="생활과 윤리" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>물리학 II</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="물리학 II" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="물리학 II" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>화학 II</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="화학 II" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="화학 II" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>생명과학 II</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="생명과학 II" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="생명과학 II" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>지구과학 II</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="지구과학 II" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="지구과학 II" value="2학기"></td>
+          </tr>
+          <tr>
+            <th rowspan="9">탐구<br>체육<br>예술<br>(택2)</th>
+            <td>여행지리</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="여행지리" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="여행지리" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>사회문제 탐구</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="사회문제 탐구" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="사회문제 탐구" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>고전과 윤리</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="고전과 윤리" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="고전과 윤리" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>생활과 과학</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="생활과 과학" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="생활과 과학" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>융합과학</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="융합과학" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="융합과학" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>과학사</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="과학사" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="과학사" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>체육탐구</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="체육탐구" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="체육탐구" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>음악연주</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="음악연주" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="음악연주" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>미술창작</td> <!--1학기 선택하면 2학기도 같이 선택되어야 함-->
+            <td>3</td>
+            <td><input type="checkbox" name="미술창작" value="1학기"></td>
+            <td>3</td>
+            <td><input type="checkbox" name="미술창작" value="2학기"></td>
+          </tr>
+          <tr>
+            <th rowspan="3">교양</th>
+            <td>환경</td> <!--1학기만-->
+            <td>3</td>
+            <td><input type="checkbox" name="환경" value="1학기"></td>
+            <td colspan="2" rowspan="3"></td>
+          </tr>
+          <tr>
+            <td>실용 경제</td> <!--1학기만-->
+            <td>3</td>
+            <td><input type="checkbox" name="실용 경제" value="1학기"></td>
+          </tr>
+          <tr>
+            <td>논술</td> <!--1학기만-->
+            <td>3</td>
+            <td><input type="checkbox" name="논술" value="1학기"></td>
+          </tr>
+          <tr>
+            <th rowspan="4">영수</th>
+            <td>미적분</td> <!--1학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="미적분" value="1학기"></td>
+            <td colspan="2" rowspan="4"></td>
+          </tr>
+          <tr>
+            <td>영어 독해와 작문</td> <!--1학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="영어 독해와 작문" value="1학기"></td>
+          </tr>
+          <tr>
+            <td>경제 수학</td> <!--1학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="경제 수학" value="1학기"></td>
+          </tr>
+          <tr>
+            <td>진로 영어</td> <!--1학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="진로 영어" value="1학기"></td>
+          </tr>
+          <tr>
+            <th rowspan="2">국어</th>
+            <td>심화 국어</td> <!--2학기만-->
+            <td colspan="2" rowspan="2"></td>
+            <td>4</td>
+            <td><input type="checkbox" name="심화 국어" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>고전 읽기</td> <!--2학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="고전 읽기" value="2학기"></td>
+          </tr>
+          <tr>
+            <th rowspan="5">영수</th>
+            <td>기하</td> <!--2학기만-->
+            <td colspan="2" rowspan="5"></td>
+            <td>4</td>
+            <td><input type="checkbox" name="기하" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>수학과제 탐구</td> <!--2학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="수학과제 탐구" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>실용 수학</td> <!--2학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="실용 수학" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>영어권 문화</td> <!--2학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="영어권 문화" value="2학기"></td>
+          </tr>
+          <tr>
+            <td>영미 문학 읽기</td> <!--2학기만-->
+            <td>4</td>
+            <td><input type="checkbox" name="영미 문학 읽기" value="2학기"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+      <br>
+      <div id="request">
+        <input type="button" class="button" value="끝내기" />
+      </div>
+    </div>
+  </body>
+</html>

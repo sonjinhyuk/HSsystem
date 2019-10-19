@@ -4,9 +4,14 @@
 	<title>학생 마이페이지</title>
 	<link rel="shortcut icon" type="image?x-icon" href="http://www.hscredit.kr/static/common/images/portal/comm/favicon.ico">
 	<style>
+		body {
+			background: #E6E6E6 url(https://raw.githubusercontent.com/sonjinhyuk/HSsystem/master/web/tt/images/6828.jpg);
+			margin: 0px 0px 0px 0px;
+		}
+
 		table {
 			margin: auto;
-			background-color: #FEF2C9;
+			background-color: #E6E6E6;
 			border-collapse: collapse;
 		}
 
@@ -19,7 +24,7 @@
 		th {
 			padding: 15px;
 			width: 130px;
-			border: 1px solid #444444;
+			border: 3px solid white;
 			font-size: 1.1em;
 			font-weight: normal;
 		}
@@ -33,9 +38,9 @@
 
 		.homepage {
 			width: 180px;
-			text-align: center;
-			margin-top: 80px;
-			margin-right: 840px;
+			display: block;
+			margin: 0px auto;
+			margin-top: 30px;
 		}
 
 		.grade {
@@ -65,6 +70,18 @@
 		.th1 {
 			width: 20px;
 			font-weight: bolder;
+		}
+
+		.Ttitle {
+			margin-bottom: 20px;
+		}
+
+		#page {
+			width: 1200px;
+			margin: 0px auto;
+			background-color: white;
+			overflow: hidden;
+			box-shadow: 0px 0px 20px rgba(0,0,0,.3);
 		}
 
 		#mypage {
@@ -99,6 +116,7 @@
 			margin-top: 40px;
 			margin-bottom: 30px;
 			font-weight: bold;
+			font-size: 13px;
 		}
 
 		#choose1 {
@@ -111,6 +129,7 @@
 	</style>
 </head>
 <body>
+	<div id="page">
 	<div>
 		<a class="homepage" href="http://www.hscredit.kr/common/greeting.do;jsessionid=74A93B8589F450BAC7D81943B5E006AA">
 		<img class="homepage" src="http://www.hscredit.kr/static/common/images/www/common/logo.png" alt="고교학점제지원센터"></a>
@@ -135,7 +154,7 @@
 	<div>
 	<div style=" display:inline-block;">
 	<table class="SubjectTable">
-		<caption>2학년 1학기</caption>
+		<caption class="Ttitle">2학년 1학기</caption>
 		<tr>
 			<th class="th1">국어</th>
 			<th class="subject" id="1Korean">(예시) 언어와 매체</th>
@@ -156,7 +175,7 @@
 	</div>
 	<div style="display:inline-block; margin-left:10px;"> 
 	<table class="SubjectTable">
-		<caption>2학년 2학기</caption>
+		<caption class="Ttitle">2학년 2학기</caption>
 		<tr>
 			<th class="th1">국어</th>
 			<th class="subject" id="2Korean">(예시) 화법과 작문</th>
@@ -178,7 +197,7 @@
 	</div>
 	<hr>
 	<table class="TimeSchedule">
-		<caption><span id="username">ㅇㅇㅇ</span>님의 시간표</caption>
+		<caption class="Ttitle"><span id="username">ㅇㅇㅇ</span>님의 시간표</caption>
 		<thead>
 			<tr>
 				<th class="th1"> </th>
@@ -223,6 +242,9 @@
 				<th>영어</th>
 			</tr>
 			<tr>
+				<th colspan="6" style="font-weight:bold; padding:5px;">점심시간</th>
+			</tr>
+			<tr>
 				<th class="th1">5</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
@@ -239,6 +261,9 @@
 				<th>영어</th>
 			</tr>
 			<tr>
+				<th colspan="6" style="font-weight:bold; padding:5px;">청소시간</th>
+			</tr>
+			<tr>
 				<th class="th1">7</th>
 				<th>국어</th> <!--기재된 과목들은 전부 예시-->
 				<th>수학</th>
@@ -248,9 +273,6 @@
 			</tr>
 		</tbody>
 		<tfoot>
-			<tr>
-				<th colspan="6" style="font-weight:bold;">방과후 수업</th>
-			</tr>
 			<tr>
 				<th class="th1">8</th>
 				<th>방과후 1</th> <!--기재된 과목들은 전부 예시-->
@@ -269,4 +291,5 @@
 			</tr>
 		</tfoot>
 	</table>
+	</div>
 </html>

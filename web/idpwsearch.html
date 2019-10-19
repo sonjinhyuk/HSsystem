@@ -1,41 +1,143 @@
-<! DOCTYPE html>
-<title>아이디/비밀번호 찾기</title>
+<!DOCTYPE html>
+<html>
 <head>
-    <br>
+	<title>아이디/비밀번호 찾기</title>
+	<link rel="shortcut icon" type="image?x-icon" href="http://www.hscredit.kr/static/common/images/portal/comm/favicon.ico">
+	<style>
+		body {
+			background: #E6E6E6 url(https://raw.githubusercontent.com/sonjinhyuk/HSsystem/master/web/tt/images/6828.jpg);
+			margin: 0px 0px 0px 0px;
+		}
 
-   <center > <h1 >아이디/비밀번호 찾기</h1></head></center>
-  
-   
+		td {
+			text-align: right;
+			font-weight: bold;
+		}
+
+		table {
+			display: inline-block;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			border-collapse: collapse;
+		}
+
+		.homepage {
+			width: 180px;
+			display: block;
+			margin: 0px auto;
+			margin-top: 30px;
+		}
+
+		.line {
+			background-color: #0B2161;
+			height: 5px;
+			width: 1000px;
+			text-align: center;
+		}
+
+		.find {
+			width: 450px;
+			border: 2px solid #BDBDBD;
+			display: inline-block;
+			padding-top: 10px;
+		}
+
+		.short-line {
+			background-color: #0B2161;
+			width: 400px;
+			height: 5px;
+		}
+
+		.textbox {
+			padding: 5px;
+		}
+
+		#page {
+			width: 1200px;
+			height: 800px;
+			margin: 0px auto;
+			background-color: white;
+			overflow: hidden;
+			box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+		}
+
+		#Ptitle {
+			text-align: center;
+			margin-right: 680px;                                            
+		}
+
+		#IDorPW {
+			text-align: center;
+			margin-top: 60px;
+		}
+
+		#IDsubmit {
+			padding: 20px;
+			font-size: 1em;
+			font-weight: bold;
+			color: white;
+			background-color: #0B2161;
+			cursor: pointer;
+			outline: 0;
+			border: 0;
+		}
+
+		#PWsubmit {
+			padding: 20px;
+			height: 90px;
+			font-size: 1em;
+			font-weight: bold;
+			color: white;
+			background-color: #0B2161;
+			cursor: pointer;
+			outline: 0;
+			border: 0;
+	</style>
 </head>
 <body>
-   
-    <style>
-    body{background-color:rgb(255, 255, 255);
-    }
-    </style>
-    <br>
-    <br>
-<fieldset class="id">
-    <h1>아이디찾기</h1>
-    <style>.id{background-color:white;}</style>
-    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이름<input type = "text">
-
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;생년월일<input type = "day"></h3>
-<input type="button" value="아이디찾기" >
-
-</fieldset>
-<br>
-<br>
-<br>
-<br>
-</body><fieldset class="pw">
-<style>.pw{background-color:white;}</style><h1>비밀번호찾기</h1>
-아이디, 생년월일, 휴대전화번호를 입력 후
-비밀번호 변경 버튼을 누르시면 새로운 비밀번호를 생성할 수 있습니다.<br>
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아이디<input type = "text">
-
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;생년월일<input type = "text">
-
-<h3>&nbsp;&nbsp;핸드폰 번호<input type = "text"></h3>
-<input type = "button" value="비밀변호변경"></h3>
-</fieldset>
+	<div id="page">
+		<div>
+			<a class="homepage" href="http://www.hscredit.kr/common/greeting.do;jsessionid=74A93B8589F450BAC7D81943B5E006AA">
+			<img class="homepage" src="http://www.hscredit.kr/static/common/images/www/common/logo.png" alt="고교학점제지원센터"></a>
+		</div>
+		<h1 id="Ptitle">아이디/비밀번호 찾기</h1>
+		<hr class="line">
+		<div id="IDorPW">
+			<div class="find">
+				<h2>아이디 찾기</h2>
+				<hr class="short-line">
+				<table style="margin:45px 0px 45px 0px;">
+					<tr>
+						<td>이름</td>
+						<td><input class="textbox" type="text" maxlength="15"></td>
+						<td rowspan="2"><input id="IDsubmit" type="submit" value="아이디 찾기"></td>
+					</tr>
+					<tr>
+						<td>생년월일</td>
+						<td><input class="textbox" type="text" placeholder="ex) 20010203" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></td>
+					</tr>
+				</table>
+			</div>
+			<div class="find" style="margin-left:50px;">
+				<h2>비밀번호 찾기</h2>
+				<hr class="short-line">
+				<table>
+					<tr>
+						<td>이름</td>
+						<td><input class="textbox" type="text" maxlength="15"></td>
+						<td rowspan="3"><input id="PWsubmit" type="submit" value="비밀번호 찾기"></td>
+					</tr>
+					<tr>
+						<td>생년월일</td>
+						<td><input class="textbox" type="text" placeholder="ex) 20010203" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></td>
+					</tr>
+					<tr>
+						<td>휴대폰번호</td>
+						<td><input class="textbox" type="text" placeholder='"-"없이 입력' onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

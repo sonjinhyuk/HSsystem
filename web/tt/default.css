@@ -393,7 +393,7 @@ hr
 {
 	display: inline-block;
 	margin-top: 30px;
-	background:#25A6E1;
+	background:rgb(110, 209, 255);
 	background:-moz-linear-gradient(top, #25A6E1 0%, #188BC0 100%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #25A6E1), color-stop(100%, #188BC0));
 	background:-webkit-linear-gradient(top, #25A6E1 0%, #188BC0 100%);
@@ -599,7 +599,7 @@ ul.style3 .first
 
 /* Dropdown Button */
 .dropbtn {
-	background-color:#25A6E1;
+	background-color:rgb(110, 209, 255);
 	color: white;
 	padding: 30px;
 	font-size: 18px;
@@ -641,7 +641,7 @@ ul.style3 .first
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #6ee072;}
 
   /* login form*/
   @import url(https://fonts.googleapis.com/css?family=Roboto:300);
@@ -678,7 +678,7 @@ ul.style3 .first
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #25A6E1;
+  background: rgb(110, 209, 255);
   width: 100%;
   border: 0;
   padding: 15px;
@@ -689,7 +689,7 @@ ul.style3 .first
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #25A6E1;
+  background: rgb(110, 209, 255);
 }
 .form .message {
   margin: 15px 0 0;
@@ -697,7 +697,7 @@ ul.style3 .first
   font-size: 12px;
 }
 .form .message a {
-  color: #25A6E1;
+  color: rgb(110, 209, 255);
   text-decoration: none;
 }
 .form .register-form {
@@ -737,11 +737,11 @@ ul.style3 .first
   color: #EF3B3A;
 }
 body {
-  background: #25A6E1; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #25A6E1, #25A6E1);
-  background: -moz-linear-gradient(right, #25A6E1, #25A6E1);
-  background: -o-linear-gradient(right, #25A6E1, #25A6E1);
-  background: linear-gradient(to left, #25A6E1, #25A6E1);
+  background: rgb(67, 188, 245); /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, rgb(110, 209, 255), rgb(110, 209, 255));
+  background: -moz-linear-gradient(right, rgb(110, 209, 255), rgb(110, 209, 255));
+  background: -o-linear-gradient(right, rgb(110, 209, 255), rgb(110, 209, 255));
+  background: linear-gradient(to left, rgb(110, 209, 255), rgb(110, 209, 255));
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      

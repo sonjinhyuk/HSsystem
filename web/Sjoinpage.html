@@ -1,47 +1,140 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html>
 <head>
-    <title>학생회원가입</title>
-    <link rel="icon" type="png" href="/static/common/images/portal/comm/favicon.ico">
-    <meta charset="utf-8">
-    <style>
-        center {width: 1200px;
-                height: 800px;
-                margin: 0px 0px 0px 0px;}
+	<title>학생 회원가입</title>
+	<link rel="shortcut icon" type="image?x-icon" href="http://www.hscredit.kr/static/common/images/portal/comm/favicon.ico">
+	<style>
+		body {
+			background: #E6E6E6 url(https://raw.githubusercontent.com/sonjinhyuk/HSsystem/master/web/tt/images/6828.jpg);
+			margin: 0px 0px 0px 0px;
+		}
 
-        p{background-color:white}
-        h1{background-color:white}
-        center{background-color:white}            
+        table {
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        td {
+            text-align: right;
+            font-size: 1.2em;
+        }
+
+        .homepage {
+			width: 180px;
+			display: block;
+			margin: 0px auto;
+			margin-top: 30px;
+		}
+
+        .line {
+		background-color: #0B2161;
+		height: 5px;
+		width: 1000px;
+		text-align: center;
+	    }
+
+        .textbox {
+            padding: 8px;
+            width: 200px;
+            margin-left: 7px;
+            margin-bottom: 10px;
+        }
+
+        #page {
+			width: 1200px;
+            height: 900px;
+			margin: 0px auto;
+			background-color: white;
+			overflow: hidden;
+			box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+		}
+
+        #Ptitle {
+            text-align: center;
+            margin-right: 790px;
+        }
+
+        #idbutton {
+            padding: 6px;
+            margin-left: 5px;
+            margin-bottom: 9px;
+            font-size: 0.8em;
+            font-weight: bold;
+            background-color: #0B2161;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #done {
+            margin-top: 20px;
+            background-color: #0B2161;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #done-div {
+            text-align: center;
+            margin-left: 750px;
+        }
     </style>
 </head>
 <body>
-    <img src="http://www.hscredit.kr/static/common/images/portal/comm/logo.jpg" align="left">
-    <h1>학생회원가입</h1>
-    <hr>
-    <center>
-        <br><br>
-        &nbsp;&nbsp;이름<input type="text" />&nbsp;
-        <br><br>
-        &nbsp;&nbsp;학교<input type="text" />&nbsp;&nbsp;
-        <br><br>
-        &nbsp;&nbsp;학번<input type = "text" />&nbsp;&nbsp;
-        <br><br>
-        생년월일<input type = "date" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <br><br>
-        E-mail&nbsp;<input type="text" size="20" />&nbsp;&nbsp;
-        <br><br>
-        핸드폰 번호&nbsp;<input type = "number" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        아이디&nbsp;&nbsp;<input type="text" name="학교" >&nbsp;
-        <input type ="button" value="중복확인">&nbsp;
-        <br><br>
-        비밀번호&nbsp;&nbsp;<input type = "text" name = "학교" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <br><br>
-        &nbsp;비밀번호 확인&nbsp;&nbsp;<input type="text" name="학교" />
-        <input type = "submit" value="확인">&nbsp;&nbsp;&nbsp;&nbsp;
-        <br><br>
-        <input type="button" value="회원가입완료">
-    </center>
+    <div id="page">
+        <div>
+            <a class="homepage" href="http://www.hscredit.kr/common/greeting.do;jsessionid=74A93B8589F450BAC7D81943B5E006AA">
+            <img class="homepage" src="http://www.hscredit.kr/static/common/images/www/common/logo.png" alt="고교학점제지원센터"></a>
+        </div>
+        <h1 id="Ptitle">학생회원가입</h1>
+        <hr class="line">
+        <div>
+            <table>
+                <tr>
+                    <td>이름</td>
+                    <td><input class="textbox" type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>학교</td>
+                    <td><input class="textbox" type="text" name="userschool"></td>
+                </tr>
+                <tr>
+                    <td>학번</td>
+                    <td><input class="textbox" type="text" name="usernumber"></td>
+                </tr>
+                <tr>
+                    <td>생년월일</td>
+                    <td><input class="textbox" type="text" name="userbirth" placeholder="ex) 20010203"></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input class="textbox" type="text" name="useremail"></td>
+                </tr>
+                <tr>
+                    <td>휴대폰 번호</td>
+                    <td><input class="textbox" type="text" name="usercellphone"></td>
+                </tr>
+                <tr>
+                    <td>아이디</td>
+                    <td><input class="textbox" type="text" name="userid"></td>
+                    <td><input id="idbutton" type="button" value="중복확인"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input class="textbox" type="text" name="userpw"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input class="textbox" type="text" name="userpw2"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="done-div">
+            <input id="done" type="submit" value="회원가입완료">
+        </div>
+    </div>
 </body>
+</html>

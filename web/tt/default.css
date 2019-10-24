@@ -3,7 +3,7 @@ body
 {
 	margin: 0px 0px 0px 0px;
 	padding: 0;
-	background: #E6E6E6 url(images/main-bg.jpg);
+	background: #E6E6E6 url(https://raw.githubusercontent.com/sonjinhyuk/HSsystem/master/web/tt/images/6828.jpg);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #8F8F8F;
@@ -735,14 +735,4 @@ ul.style3 .first
 }
 .container .info span .fa {
   color: #EF3B3A;
-}
-body {
-  background: rgb(67, 188, 245); /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, rgb(110, 209, 255), rgb(110, 209, 255));
-  background: -moz-linear-gradient(right, rgb(110, 209, 255), rgb(110, 209, 255));
-  background: -o-linear-gradient(right, rgb(110, 209, 255), rgb(110, 209, 255));
-  background: linear-gradient(to left, rgb(110, 209, 255), rgb(110, 209, 255));
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
 }

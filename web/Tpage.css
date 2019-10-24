@@ -1,0 +1,65 @@
+body {
+	background: #E6E6E6 url(https://raw.githubusercontent.com/sonjinhyuk/HSsystem/master/web/tt/images/6828.jpg);
+	margin: 0px 0px 0px 0px;
+}
+
+table {
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.homepage {
+	width: 180px;
+	display: block;
+	margin: 0px auto;
+	margin-top: 30px;
+}
+
+.line {
+background-color: #0B2161;
+height: 5px;
+width: 1000px;
+text-align: center;
+}
+
+.boxtitle {
+	text-align: right;
+	font-size: 1.2em;
+}
+
+.textbox {
+	margin-left: 5px;
+	padding: 8px;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+#page {
+	width: 1200px;
+	height: 1100px;
+	margin: 0px auto;
+	background-color: white;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+}
+
+#Ptitle {
+	text-align: center;
+	margin-right: 790px;
+}
+
+#done-div {
+	text-align: center;
+	margin-left: 750px;
+}
+
+#done {
+	margin-top: 20px;
+	background-color: #0B2161;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+}

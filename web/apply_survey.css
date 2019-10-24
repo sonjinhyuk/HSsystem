@@ -255,11 +255,11 @@ hr
 
 #content h1
 {
-	padding: 20px 40px 20px 40px;
+	padding: 50px 40px 20px 40px;
 	letter-spacing: -1px;
 	font-size: 35px;
 	font-weight: bold;
-	color: #1100ff;
+	color: #39a6b9;
 }
 
 #content h2
@@ -661,7 +661,7 @@ ul.style3 .first
 
  div#select_box_A{
 	position: relative;
-    width: 1100px;
+    width: 450px;
     height: 40px;
     background-color: #7ad6ba;
 	border: 5px solid rgba(255, 255, 255, 0.664);
@@ -672,7 +672,7 @@ ul.style3 .first
 
  div#select_box_B{
 	position: relative;
-    width: 1100px;
+    width: 450px;
     height: 40px;
     background-color: #148a99;
 	border: 5px solid rgba(255, 255, 255, 0.664);
@@ -683,7 +683,7 @@ ul.style3 .first
 
  div#select_box_C{
 	position: relative;
-    width: 1100px;
+    width: 450px;
     height: 40px;
     background-color: #097691; 
 	border: 5px solid rgba(255, 255, 255, 0.664);	
@@ -694,7 +694,7 @@ ul.style3 .first
 
  div#select_box_D{
 	position: relative;
-    width: 1100px;
+    width: 450px;
     height: 40px;
     background-color: #097691; 
 	border: 5px solid rgba(255, 255, 255, 0.664);	
@@ -705,7 +705,7 @@ ul.style3 .first
 
  div#select_box_E{
 	position: relative;
-    width: 1100px;
+    width: 450px;
     height: 40px;
     background-color: #035164; 
 	border: 5px solid rgba(255, 255, 255, 0.664);	
@@ -716,7 +716,7 @@ ul.style3 .first
 
  div#select_box_F{
 	position: relative;
-    width: 1100px;
+    width: 450px;
     height: 40px;
     background-color: #035164; 
 	border: 5px solid rgba(255, 255, 255, 0.664);	
@@ -727,7 +727,7 @@ ul.style3 .first
 
  div#select_box_G{
 	position: relative;
-    width: 1100px;
+    width: 450px;
     height: 40px;
     background-color: #01333f; 
 	border: 5px solid rgba(255, 255, 255, 0.664);	

@@ -108,7 +108,7 @@
                 </tr>
                 <tr>
                     <td>생년월일</td>
-                    <td><input class="textbox" type="text" name="userbirth" placeholder="ex) 20010203"></td>
+                    <td><input class="textbox" type="text" name="userbirth" placeholder="ex) 20010203" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></td>
                 </tr>
                 <tr>
                     <td>E-mail</td>
@@ -116,7 +116,7 @@
                 </tr>
                 <tr>
                     <td>휴대폰 번호</td>
-                    <td><input class="textbox" type="text" name="usercellphone"></td>
+                    <td><input class="textbox" type="text" name="usercellphone" placeholder='"-"없이 입력' onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></td>
                 </tr>
                 <tr>
                     <td>아이디</td>

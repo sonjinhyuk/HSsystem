@@ -1,47 +1,136 @@
 <!DOCTYPE html>
-<html lang="ko">
-<title>교사회원가입</title>
+<html>
 <head>
-  <meta charset="utf-8">
-  <style>
-    center{width: 1200px;
-          height: 800px;
-          margin: 0px 0px 0px 0px;}
-    body{background-color:white}
-    p{background-color:white}
-    h1{background-color:white}
-  </style>
+	<title>교사 회원가입</title>
+    <link rel="shortcut icon" type="image?x-icon" href="http://www.hscredit.kr/static/common/images/portal/comm/favicon.ico">
+    <meta charset="utf-8">
+    <style>
+        body {
+			background: #E6E6E6 url(https://raw.githubusercontent.com/sonjinhyuk/HSsystem/master/web/tt/images/6828.jpg);
+			margin: 0px 0px 0px 0px;
+		}
+
+        table {
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+
+        .homepage {
+			width: 180px;
+			display: block;
+			margin: 0px auto;
+			margin-top: 30px;
+		}
+
+        .line {
+		background-color: #0B2161;
+		height: 5px;
+		width: 1000px;
+		text-align: center;
+	    }
+
+        .boxtitle {
+            text-align: right;
+            font-size: 1.2em;
+        }
+
+        .textbox {
+            margin-left: 5px;
+            padding: 8px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        #page {
+			width: 1200px;
+            height: 1100px;
+			margin: 0px auto;
+			background-color: white;
+			overflow: hidden;
+			box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+		}
+
+        #Ptitle {
+            text-align: center;
+            margin-right: 790px;
+        }
+
+        #done-div {
+            text-align: center;
+            margin-left: 750px;
+        }
+
+        #done {
+            margin-top: 20px;
+            background-color: #0B2161;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <img src="http://www.hscredit.kr/static/common/images/portal/comm/logo.jpg" align="left"><h1>교사회원가입</h1>
-  <hr><br><br>
-  <table>
-  <center>
-    이름<input type = "text" /> 
-    <br><br>
-    학교<input type = "text" />
-    <br><br>
-    맡은학년과 반<input type = "text" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br><br>
-    &nbsp;&nbsp;&nbsp;부담임입니다<input type="radio" name="teacher" value="half teacher" checked="checked" />
-    담임이아닙니다<input type="radio" name="teacher" value="no a class teacher" />
-    <br><br>
-    생년월일&nbsp;&nbsp;
-    <input type = "date" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br><br>
-    E-mail<input type="text" size="20" />&nbsp;&nbsp;
-    <br><br>
-    핸드폰 번호<input type = "number" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아이디<input type="text" name="학교" />
-    <input type ="button" value="중복확인" />
-    <br><br>
-    비밀번호<input type="text" name="학교" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br><br>
-    비밀번호 확인<input type="text" name="학교" />
-    <input type="submit" value="확인">&nbsp;&nbsp;&nbsp;&nbsp;
-    <br><br>
-    <input type="button" value="회원가입완료">
-    <br>
-  </center>
+    <div id="page">
+        <div>
+            <a class="homepage" href="http://www.hscredit.kr/common/greeting.do;jsessionid=74A93B8589F450BAC7D81943B5E006AA">
+            <img class="homepage" src="http://www.hscredit.kr/static/common/images/www/common/logo.png" alt="고교학점제지원센터"></a>
+        </div>
+        <h1 id="Ptitle">교사회원가입</h1>
+        <hr class="line">
+        <div>
+            <table>
+                <tr>
+                    <td class="boxtitle">이름</td>
+                    <td><input class="textbox" type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td class="boxtitle">학교</td>
+                    <td><input class="textbox" type="text" name="userschool"></td>
+                </tr>
+                <tr>
+                    <td class="boxtitle">맡은 학급</td>
+                    <td><input class="textbox" type="text" name="userclass"></td>
+                </tr>
+                <tr>
+                    <td class="boxtitle" rowspan="3">교사유형</td>
+                    <td><input class="teachertype"" type="radio" name="usertype" value="담임">담임</td>
+                </tr>
+                <tr>
+                    <td><input class="teachertype" type="radio" name="usertype" value="부담임">부담임</td>
+                </tr>
+                <tr>
+                    <td><input class="teachertype" type="radio" name="usertype" value="교과교사" style="margin-bottom:10px;">교과교사</td>
+                <tr>
+                    <td class="boxtitle">생년월일</td>
+                    <td><input class="textbox" type="text" name="userbirth" placeholder="ex) 20010203" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></td>
+                </tr>
+                <tr>
+                    <td class="boxtitle">E-mail</td>
+                    <td><input class="textbox" type="text" name="useremail"></td>
+                </tr>
+                <tr>
+                    <td class="boxtitle">휴대폰 번호</td>
+                    <td><input class="textbox" type="text" name="username" placeholder='"-"없이 입력' onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/></td>
+                </tr>
+                <tr>
+                    <td class="boxtitle">아이디</td>
+                    <td><input class="textbox" type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td class="boxtitle">비밀번호</td>
+                    <td><input class="textbox" type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td class="boxtitle">비밀번호 확인</td>
+                    <td><input class="textbox" type="text" name="username"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="done-div">
+            <input id="done" type="submit" value="회원가입완료">
+        </div>
+    </div>
 </body>

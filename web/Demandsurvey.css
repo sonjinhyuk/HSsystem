@@ -881,6 +881,36 @@ ul.style3 .first
 	 color: rgb(0, 0, 0);
  }/**/
 
+ table, th, td {
+	border: 1px solid #bcbcbc;
+  }
+  table {
+	width: 90%;
+	height: 100px;
+  }
+  
+  th {
+	width: 200px;
+  }
+
+  td {
+	width: 200px;
+  }
+
+  table{
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  }
+  #wrapper 
+  { 
+	display: table;
+  }
+  #cell 
+  {
+	display: table-cell; vertical-align: middle; 
+  }
+
  
 
  

@@ -736,6 +736,17 @@ ul.style3 .first
 	margin-bottom: 10px;
  }
 
+ div#select_box_H{
+	position: relative;
+    width: 450px;
+    height: 40px;
+    background-color: #01333f; 
+	border: 5px solid rgba(255, 255, 255, 0.664);	
+	padding: 3px;
+	margin-left: 50px;
+	margin-bottom: 10px;
+ }
+
  div#select_box_A label{
 	position: absolute;
     font-size: 17px;
@@ -805,6 +816,16 @@ ul.style3 .first
  }
 
  div#select_box_G label{
+	position: absolute;
+    font-size: 17px;
+    color: rgb(2, 1, 46);
+    top: 13px;
+    left: 25px;
+    letter-spacing: 1px;
+	font-weight: bold;	
+ }
+
+ div#select_box_H label{
 	position: absolute;
     font-size: 17px;
     color: rgb(2, 1, 46);
@@ -907,6 +928,19 @@ ul.style3 .first
 	margin-right: 15px;
  }
 
+ div#select_box_D select#select_H{
+	width: 130px;
+    height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica;
+	margin-left: 20px;
+	margin-right: 15px;
+ }
+
  div#select_box_A select#select_AA{
 	width: 130px;
     height: 40px;
@@ -986,6 +1020,19 @@ ul.style3 .first
  }
 
  div#select_box_G select#select_GG{
+	width: 130px;
+    height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica;
+	margin-left: 95px;
+	margin-right: 15px;
+ }
+
+ div#select_box_G select#select_HH{
 	width: 130px;
     height: 40px;
     min-height: 40px;

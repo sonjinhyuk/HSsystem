@@ -1032,7 +1032,7 @@ ul.style3 .first
 	margin-right: 15px;
  }
 
- div#select_box_G select#select_HH{
+ div#select_box_H select#select_HH{
 	width: 130px;
     height: 40px;
     min-height: 40px;
@@ -1046,7 +1046,7 @@ ul.style3 .first
  }
  table, th, td, tr{
 	 font-size: 20px;
-	 border: 2px solid black;
+	 border: 2px solid rgb(31, 118, 124);
 	 text-align: center;
 	 width: 1100px;
 	 height: 100px;

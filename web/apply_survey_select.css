@@ -860,29 +860,43 @@ ul.style3 .first
 	margin-right: 15px;
  }
 
- table, td, tr{
+ table, tr{
 	 font-size: 30px;
-	 border: 2px solid black;
+	 border: 1px solid rgb(0, 0, 0);
 	 text-align: center;
 	 width: 250px;
 	 height: 80px;
 	 margin-left: 45px;
 	 margin-bottom: 50px;
-	 background-color: rgb(255, 255, 255);
-	 color: rgb(132, 180, 207);
+	 margin-top: 30px;
+	 background-color: rgb(210, 249, 252);
+	 color: rgb(173, 198, 212);
  }
 
 
  th{
 	font-size: 35px;
-	border: 4px solid rgb(99, 121, 218);
+	border: 3px solid rgb(89, 150, 136);
 	text-align: center;
 	width: 300px;
 	height: 100px;
 	margin-left: 45px;
 	margin-bottom: 50px;
-	color: rgb(0, 68, 255);
+	color: rgb(124, 213, 235);
 	
+ }
+
+ td{
+	font-size: 30px;
+	border: 1px solid black;
+	text-align: center;
+	width: 250px;
+	height: 80px;
+	margin-left: 45px;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	background-color: rgb(236, 254, 255);
+	color: rgb(46, 70, 83);
  }
 
 .button{

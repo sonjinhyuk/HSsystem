@@ -270,12 +270,21 @@ hr
 	color: #222222;
 }
 
+#content h3
+{
+	padding: 10px 40px 10px 40px;
+	letter-spacing: -1px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #87d0dd;
+}
+
 #content p
 {
-	padding: 0px 0px 20px 0px;
-	letter-spacing: -1px;
-	font-size: 15px;
-	color: #717171;
+	padding: 0px 40px 10px 40px;
+	letter-spacing: 0px;
+	font-size: 17px;
+	color: #394f55;
 }
 
 #content .subtitle

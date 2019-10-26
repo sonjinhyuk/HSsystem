@@ -29,7 +29,7 @@ body {
 
  #page {
 	width: 1200px;
-	height: 1600px;
+	height: 100%;
 	margin: 0px auto;
 	background-color: white;
 	overflow: hidden;

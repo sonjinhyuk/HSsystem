@@ -4,10 +4,12 @@ body {
  }
 
  table {
-	margin: 0 auto;
-	margin-top: 80px;
- }
-
+	width: 100%;
+  }
+  
+  table, th, td {
+	border: 1px solid #bcbcbc;
+  }
  .homepage {
 	width: 180px;
 	 display: block;

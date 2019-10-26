@@ -1,53 +1,80 @@
 body {
 	background: #E6E6E6 url(https://raw.githubusercontent.com/sonjinhyuk/HSsystem/master/web/tt/images/6828.jpg);
-	 margin: 0px 0px 0px 0px;
- }
+	margin: 0px 0px 0px 0px;
+}
 
-  table, th, td {
-	border: 1px solid #bcbcbc;
-  }
+table {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	background-color: #E6E6E6;
+	border-collapse: collapse;
+}
 
-  table {
-	width: 100%;
-  }
+caption {
+	text-align: left;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
 
- .homepage {
+th {
+	padding: 15px;
+	border: 3px solid white;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+td {
+	padding: 15px;
+	border: 3px solid white;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+.homepage {
 	width: 180px;
-	 display: block;
-	 margin: 0px auto;
-	 margin-top: 30px;
- }
+	display: block;
+	margin: 0px auto;
+	margin-top: 30px;
+}
 
- .line {
+.line {
 	background-color: #0B2161;
 	height: 5px;
 	width: 1000px;
 	text-align: center;
- }
+}
 
- #page {
+.Snumber {
+	width: 60px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Sname {
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Ssubject {
+	font-weight: bold;
+}
+
+#page {
 	width: 1200px;
-	height: 100%;
 	margin: 0px auto;
 	background-color: white;
 	overflow: hidden;
 	box-shadow: 0px 0px 20px rgba(0,0,0,.3);
- }
-
- #Ptitle {
-	text-align: center;
-	margin-right: 550px;   
- }
-#container {
-   position:absolute;
-   top:35%;
-   left:50%;
-   transform:translate(-50%, -50%);
 }
 
-#id {
-position:absolute;
-   top:100%;
-   left:50%;
-   transform:translate(-50%, -50%);
+#Ptitle {
+	text-align: center;
+	margin-right: 550px;
 }

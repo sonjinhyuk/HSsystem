@@ -18,36 +18,36 @@
 		<input type="button" id="edit" value="정보수정" onclick="location.href='#'">
 	</div>
 	<div style="text-align:center;">
-		<div style="margin-top:80px; margin-right: 720px;">
+		<div style="margin-top:30px; margin-right: 720px;">
 			<span id="result">수요조사 결과</span>
 			<input type="button" class="grade" value="2학년" onclick="location.href='#'">
 			<input type="button" class="grade" value="3학년" onclick="location.href='#'">
 		</div>
 	<div>
-	<div id="choose">
-		<span style="font-weight:bold; font-size:1.2em;">*</span>
-		<span id="choose1">일반선택과목</span>
-		<span id="choose2">진로선택과목</span>
-	</div>
+		<br><br>
 	<div>
 	<div style=" display:inline-block;">
 	<table class="SubjectTable">
 		<caption class="Ttitle">2학년 1학기</caption>
 		<tr>
-			<th class="th1">국어</th>
-			<th class="subject" id="1Korean">(예시) 언어와 매체</th>
+			<th class="th1">기초</th>
+			<th class="subject"><span id="1Korean-1">문학</span> / <span id="1Korean-2">언어와 매체</span> / <span id="1Korean-3">수학 I</span> / <span id="1Korean-4">확률과 통계</span> / <span id="1Korean-5">영어 I</span></th>
 		</tr>
 		<tr>
-			<th class="th1">수학</th>
-			<th class="subject" id="1Math">(예시) 미적분</th>
+			<th class="th1">체육</th>
+			<th class="subject" id="1Math">체육</th>
 		</tr>
 		<tr>
-			<th class="th1">영어</th>
-			<th class="subject" id="1English">(예시) 영어2</th>
+			<th class="th1">예술</th>
+			<th class="subject" id="1English">음악</th>
 		</tr>
 		<tr>
 			<th class="th1">탐구</th>
-			<th class="subject"><span id="1Others-1">(예시) 물리1</span>,<span id="1Others-2">지구과학1</span></th>
+			<th class="subject"><span id="1Others-1">물리학 I</span> / <span id="1Others-2">생명과학 I</span></th>
+		</tr>
+		<tr>
+			<th class="th1">생활</th>
+			<th class="subject"><span id="1Others-1">일본어 I</span></th>
 		</tr>
 	</table>
 	</div>
@@ -55,30 +55,34 @@
 	<table class="SubjectTable">
 		<caption class="Ttitle">2학년 2학기</caption>
 		<tr>
-			<th class="th1">국어</th>
-			<th class="subject" id="2Korean">(예시) 화법과 작문</th>
+			<th class="th1">기초</th>
+			<th class="subject"><span id="1Korean-1">문학</span> / <span id="1Korean-2">독서</span> / <span id="1Korean-3">수학 II</span> / <span id="1Korean-4">확률과 통계</span> / <span id="1Korean-5">영어 II</span></th>
 		</tr>
 		<tr>
-			<th class="th1">수학</th>
-			<th class="subject" id="2Math">(예시) 확률과 통계</th>
+			<th class="th1">체육</th>
+			<th class="subject" id="1Math">체육</th>
 		</tr>
 		<tr>
-			<th class="th1">영어</th>
-			<th class="subject" id="2English">(예시) 영어권 문화 탐구</th>
+			<th class="th1">예술</th>
+			<th class="subject" id="1English">미술</th>
 		</tr>
 		<tr>
 			<th class="th1">탐구</th>
-			<th class="subject"><span id="2Others-1">(예시) 화학1</span>,<span id="2Others-2">생명과학1</span></th>
+			<th class="subject"><span id="1Others-1">화학 I</span> / <span id="1Others-2">지구과학 I</span></th>
+		</tr>
+		<tr>
+			<th class="th1">생활</th>
+			<th class="subject"><span id="1Others-1">일본어 I</span></th>
 		</tr>
 	</table>
 	</div>
 	</div>
 	<hr>
 	<table class="TimeSchedule">
-		<caption class="Ttitle"><span id="username">ㅇㅇㅇ</span>님의 시간표</caption>
+		<caption class="Ttitle"><span id="username">안준식</span>님의 시간표</caption>
 		<thead>
 			<tr>
-				<th class="th1"> </th>
+				<th class="th1">교시</th>
 				<th style="font-weight:bold;">월</th>
 				<th style="font-weight:bold;">화</th>
 				<th style="font-weight:bold;">수</th>
@@ -89,65 +93,64 @@
 		<tbody> <!--각 시간별로 id를 설정해야 서버에서 불러올 수 있을 것 같은데 어떻게 설정해야 하는지 모르겠어요-->
 			<tr>
 				<th class="th1">1</th>
-				<th>국어</th> <!--기재된 과목들은 전부 예시-->
-				<th>수학</th>
-				<th>사회</th>
-				<th>과학</th>
-				<th>영어</th>
+				<th>언어와 매체</th> <!--기재된 과목들은 전부 예시-->
+				<th>언어와 매체</th>
+				<th>확률과 통계</th>
+				<th>물리학 I</th>
+				<th>생명과학 I</th>
 			</tr>
 			<tr>
 				<th class="th1">2</th>
-				<th>국어</th> <!--기재된 과목들은 전부 예시-->
-				<th>수학</th>
-				<th>사회</th>
-				<th>과학</th>
-				<th>영어</th>
+				<th>문학</th> <!--기재된 과목들은 전부 예시-->
+				<th>수학 I</th>
+				<th>언어와 매체</th>
+				<th>물리학 I</th>
+				<th>생명과학 I</th>
 			</tr>
 			<tr>
 				<th class="th1">3</th>
-				<th>국어</th> <!--기재된 과목들은 전부 예시-->
-				<th>수학</th>
-				<th>사회</th>
-				<th>과학</th>
-				<th>영어</th>
+				<th>영어 I</th> <!--기재된 과목들은 전부 예시-->
+				<th>음악</th>
+				<th>수학 I</th>
+				<th>생명과학 I</th>
+				<th>물리학 I</th>
 			</tr>
 			<tr>
 				<th class="th1">4</th>
-				<th>국어</th> <!--기재된 과목들은 전부 예시-->
-				<th>수학</th>
-				<th>사회</th>
-				<th>과학</th>
-				<th>영어</th>
+				<th>일본어 I</th> <!--기재된 과목들은 전부 예시-->
+				<th>일본어 I</th>
+				<th>문학</th>
+				<th>문학</th>
+				<th>영어 I</th>
 			</tr>
 			<tr>
 				<th colspan="6" style="font-weight:bold; padding:5px;">점심시간</th>
 			</tr>
 			<tr>
 				<th class="th1">5</th>
-				<th>국어</th> <!--기재된 과목들은 전부 예시-->
-				<th>수학</th>
-				<th>사회</th>
-				<th>과학</th>
-				<th>영어</th>
+				<th>확률과 통계</th> <!--기재된 과목들은 전부 예시-->
+				<th>영어 I</th>
+				<th>체육</th>
+				<th>일본어 I</th>
+				<th rowspan="2">동아리</th>
 			</tr>
 			<tr>
 				<th class="th1">6</th>
-				<th>국어</th> <!--기재된 과목들은 전부 예시-->
-				<th>수학</th>
-				<th>사회</th>
-				<th>과학</th>
-				<th>영어</th>
+				<th>물리학 I</th> <!--기재된 과목들은 전부 예시-->
+				<th>생명과학 I</th>
+				<th>물리학 I</th>
+				<th>영어 I</th>
 			</tr>
 			<tr>
 				<th colspan="6" style="font-weight:bold; padding:5px;">청소시간</th>
 			</tr>
 			<tr>
 				<th class="th1">7</th>
-				<th>국어</th> <!--기재된 과목들은 전부 예시-->
-				<th>수학</th>
-				<th>사회</th>
-				<th>과학</th>
-				<th>영어</th>
+				<th>수학 I</th> <!--기재된 과목들은 전부 예시-->
+				<th>진로</th>
+				<th>생명과학 I</th>
+				<th>수학 I</th>
+				<th>자율</th>
 			</tr>
 		</tbody>
 		<tfoot>
